@@ -1,47 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>PRS Managed Services</title>
+  <title>PRS Managed Services | Seminar Follow-Up</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="keywords" content="medical billing, medical coding, revenue cycle management, practice analysis">
   <meta name="author" content="Brad Sclar">
 
-<!-- Load external BS5 -->  
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Load external BS5, animations, fonts -->  
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
 <!-- Load favicon-->
 <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
 <link rel="manifest" href="images/favicon_io/site.webmanifest">
-  
+
+<style>
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9fafb;
+    color: #1f2937;
+  }
+  h2 {
+    color: #111827;
+  }
+  .cta-button, .call-button {
+    font-weight: 600;
+    border-radius: 0.5rem;
+  }
+  .cta-button i, .call-button i {
+    margin-right: 0.5rem;
+  }
+  .badge {
+    font-size: 0.8rem;
+    vertical-align: middle;
+  }
+  .animate__animated {
+    visibility: hidden;
+  }
+  .animate__animated.animate__fadeIn,
+  .animate__animated.animate__fadeInUp,
+  .animate__animated.animate__fadeInDown,
+  .animate__animated.animate__fadeInLeft,
+  .animate__animated.animate__fadeInRight {
+    visibility: visible;
+  }
+  .logo-container {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .subtitle {
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+  .logo-container img {
+    transition: transform 0.4s ease;
+  }
+  .logo-container img:hover {
+    transform: scale(1.05);
+  }
+</style>
+
 </head>
 <body>
-<!-- Load PRS logo-->
-<div class="container bg-primary">
-  <div class="container-fluid p-3 text-center">
-    <img src="images/favicon_io/prsmanagedserviceslogo.svg" class="img-fluid">
-  </div>
-</div>
+  <div class="container py-5">
+    <div class="logo-container" data-aos="fade-down">
+      <!-- Replace this <img> with your actual SVG file path -->
+      <img src="images/favicon_io/prsmanagedserviceslogo.svg" alt="PRS Managed Services Logo" class="img-fluid mb-3" style="max-width: 400px;">
+      <p class="subtitle animate__animated animate__fadeInUp"><strong>Trusted by clinics nationwide. Proven by results. <span class="badge bg-success">Top Rated</span></strong></p>
+    </div>
 
-<div class="container-fluid">
-  <p>
-    <h1 class="display-6 text-center fst-italic">Our mission is to guide your clinic to optimized income.</h1>
-  </p>
-</div>
-  
-<div class="container-fluid mt-3">
-  <div class="row text-center">
-    <p>
-    <h4>
-      <a href="tel:18773201692">877 320 1692</a>&nbsp;&nbsp;&nbsp;<a href="mailto:sales@prsdata.com">sales@prsdata.com</a>
-    </h4>
-    </p>
-    
-  </div>
-</div>
+    <div class="row justify-content-center mb-5 animate__animated animate__fadeInUp" data-aos>
+      <div class="col-md-3 d-grid mb-2">
+        <a href="mailto:sales@prsdata.com" class="btn btn-primary cta-button">
+          <i class="fas fa-envelope"></i>Email Us
+        </a>
+      </div>
+      <div class="col-md-3 d-grid mb-2">
+        <a href="tel:8773201692" class="btn btn-outline-primary call-button">
+          <i class="fas fa-phone"></i>Call Us: 877-320-1692
+        </a>
+      </div>
+    </div>
 
+    <div class="mb-4 animate__animated animate__fadeIn" data-aos>
+      <p>If you attended a seminar with Mark Painter <span class="badge bg-info">Speaker</span>, you’ve already experienced a glimpse of the insight and expertise that fuels PRS Managed Services. Now, discover how our team can help your clinic unlock greater efficiency, compliance, and revenue.</p>
+    </div>
+
+    <h2 class="animate__animated animate__fadeInLeft" data-aos>Who We Are</h2>
+    <ul class="animate__animated animate__fadeInLeft" data-aos>
+      <li>Medical billing and coding <span class="badge bg-primary">Core Service</span></li>
+      <li>EMR navigation and training</li>
+      <li>Accounts receivable (AR) management</li>
+      <li>Workflow and practice optimization <span class="badge bg-warning text-dark">New</span></li>
+      <li>Compliance and regulatory support</li>
+    </ul>
+
+    <h2 class="animate__animated animate__fadeInRight" data-aos>Backed by Leadership You Can Trust</h2>
+    <p class="animate__animated animate__fadeInRight" data-aos>Mark Painter, our CEO <span class="badge bg-secondary">Expert</span>, is a nationally recognized authority in billing, coding, and RVUs. As the co-developer of <em>Coding Today</em> and a frequent speaker and consultant, Mark brings unmatched insight to your operations.</p>
+
+    <h2 class="animate__animated animate__fadeIn" data-aos>Real Results. Real Impact. <span class="badge bg-success">+25% Revenue</span></h2>
+    <p class="animate__animated animate__fadeIn" data-aos>Clients regularly see increased revenue within months, thanks to our hands-on approach and deep industry knowledge. We don't just consult—we execute.</p>
+
+    <h2 class="animate__animated animate__fadeInLeft" data-aos>Our Difference</h2>
+    <ul class="animate__animated animate__fadeInLeft" data-aos>
+      <li>✔ Deep industry experience <span class="badge bg-info">20+ Years</span></li>
+      <li>✔ Transparent communication</li>
+      <li>✔ Customized solutions <span class="badge bg-dark">Tailored</span></li>
+      <li>✔ Results-driven execution</li>
+    </ul>
+
+    <p class="animate__animated animate__fadeIn" data-aos>PRS Managed Services is more than a vendor—we’re a true extension of your clinic.</p>
+
+    <div class="row justify-content-center mt-5 animate__animated animate__fadeInUp" data-aos>
+      <div class="col-md-3 d-grid mb-2">
+        <a href="mailto:sales@prsdata.com" class="btn btn-primary cta-button">
+          <i class="fas fa-envelope"></i>Email Us
+        </a>
+      </div>
+      <div class="col-md-3 d-grid mb-2">
+        <a href="tel:8773201692" class="btn btn-outline-primary call-button">
+          <i class="fas fa-phone"></i>Call Us: 877-320-1692
+        </a>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
 </body>
 </html>
