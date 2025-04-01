@@ -123,7 +123,7 @@
 
     <p class="animate__animated animate__fadeInRight" data-aos>Marianne DeSciose, our Director of Operations <span class="badge bg-secondary" data-bs-toggle="modal" data-bs-target="#marianneModal">Strategist</span>, brings over 15 years of experience at PRS. With deep knowledge of practice management systems and workflow optimization, she has helped numerous clients achieve rapid and lasting income growth.</p>
 
-    <h2 class="animate__animated animate__fadeIn" data-aos>Real Results. Real Impact. <span class="badge bg-success">+25% Revenue</span></h2>
+    <h2 class="animate__animated animate__fadeIn" data-aos>Real Results. Real Impact. <span class="badge bg-success" data-bs-toggle="modal" data-bs-target="#25%Modal">+25% Revenue</span></h2>
     <p class="animate__animated animate__fadeIn" data-aos>Clients regularly see increased revenue within months, thanks to our hands-on approach and deep industry knowledge. We don't just consult—we execute.</p>
 
     <h2 class="animate__animated animate__fadeInLeft" data-aos>Our Difference</h2>
@@ -184,6 +184,41 @@
     </div>
   </div>
 
+  <!-- 25% Revenue Modal -->
+<div class="modal fade" id="25%Modal" tabindex="-1" aria-labelledby="resultsModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="resultsModalLabel">Measurable Results</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body bg-light">
+        <p><strong>After using our unique protocols, customers can expect:</strong></p>
+        <ul>
+          <li>✔ Reduction of Days in AR: <strong>40% to 50%</strong></li>
+          <li>✔ Increase in Monthly Revenue: <strong>+5%</strong></li>
+          <li>✔ Average Payment Per Visit: <strong>+25%</strong></li>
+        </ul>
+
+        <div class="row text-center mt-4">
+          <div class="col-md-4">
+            <canvas id="arChart"></canvas>
+            <p class="mt-2">Days in AR Reduction</p>
+          </div>
+          <div class="col-md-4">
+            <canvas id="revenueChart"></canvas>
+            <p class="mt-2">Monthly Revenue Increase</p>
+          </div>
+          <div class="col-md-4">
+            <canvas id="paymentChart"></canvas>
+            <p class="mt-2">Payment per Visit</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script>
@@ -192,5 +227,68 @@
       once: true
     });
   </script>
+
+  <!-- 25% modal script-->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const arChart = new Chart(document.getElementById('arChart'), {
+        type: 'bar',
+        data: {
+          labels: ['Before', 'After'],
+          datasets: [{
+            label: 'Days in AR',
+            data: [60, 33],
+            backgroundColor: ['#ef4444', '#10b981']
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: { legend: { display: false } },
+          scales: { y: { beginAtZero: true } }
+        }
+      });
+  
+      const revenueChart = new Chart(document.getElementById('revenueChart'), {
+        type: 'line',
+        data: {
+          labels: ['Jan', 'Feb', 'Mar', 'Apr'],
+          datasets: [{
+            label: 'Revenue ($)',
+            data: [10000, 10300, 10700, 11000],
+            borderColor: '#3b82f6',
+            backgroundColor: '#93c5fd',
+            fill: true,
+            tension: 0.4
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: { legend: { display: false } },
+          scales: { y: { beginAtZero: false } }
+        }
+      });
+  
+      const paymentChart = new Chart(document.getElementById('paymentChart'), {
+        type: 'doughnut',
+        data: {
+          labels: ['Original', 'Increase'],
+          datasets: [{
+            data: [75, 25],
+            backgroundColor: ['#fbbf24', '#10b981']
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: {
+              position: 'bottom'
+            }
+          }
+        }
+      });
+    });
+  </script>
+  
 </body>
 </html>
