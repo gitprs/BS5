@@ -119,7 +119,12 @@
   <div class="container py-5">
     <div class="logo-container" data-aos="fade-down">
       <img src="images/favicon_io/prsmanagedserviceslogo.svg" alt="PRS Managed Services Logo" class="img-fluid mb-3">
-      <p class="subtitle animate__animated animate__fadeInUp"><strong>Trusted by clinics nationwide. Proven by results. <span class="badge bg-success">Top Rated</span></strong></p>
+      <p class="subtitle animate__animated animate__fadeInUp">
+        <strong>
+          Trusted by clinics nationwide. Proven by results.
+          <span class="badge bg-success" data-bs-toggle="modal" data-bs-target="#reviewsModal">Top Rated</span>
+        </strong>
+      </p>
     </div>
 
     <div class="row justify-content-center mb-5 animate__animated animate__fadeInUp" data-aos>
@@ -140,12 +145,21 @@
     </div>
 
     <h2 class="animate__animated animate__fadeInRight" data-aos>Backed by Leadership You Can Trust</h2>
-    <p class="animate__animated animate__fadeInRight" data-aos>Mark Painter, our <span class="badge bg-primary" data-bs-toggle="modal" data-bs-target="#markModal">CEO Expert</span>, is a nationally recognized authority in billing, coding, and RVUs. As the co-developer of <a href="https://www.prsnetwork.com/codingtoday" target="_blank">Coding Today</a> and a frequent speaker and consultant, Mark brings unmatched insight to your operations.</p>
+    <p class="animate__animated animate__fadeInRight" data-aos>
+      Mark Painter, our <span class="badge bg-primary" data-bs-toggle="modal" data-bs-target="#markModal">CEO Expert</span>, is a nationally recognized authority in billing, coding, and RVUs. As the co-developer of <a href="https://www.prsnetwork.com/codingtoday" target="_blank">Coding Today</a> and a frequent speaker and consultant, Mark brings unmatched insight to your operations.
+    </p>
 
-    <p class="animate__animated animate__fadeInRight" data-aos>Marianne DeSciose, our Director of Operations <span class="badge bg-primary" data-bs-toggle="modal" data-bs-target="#marianneModal">Strategist</span>, brings over 15 years of experience at PRS. With deep knowledge of practice management systems and workflow optimization, she has helped numerous clients achieve rapid and lasting income growth.</p>
+    <p class="animate__animated animate__fadeInRight" data-aos>
+      Marianne DeSciose, our Director of Operations <span class="badge bg-primary" data-bs-toggle="modal" data-bs-target="#marianneModal">Strategist</span>, brings over 15 years of experience at PRS. With deep knowledge of practice management systems and workflow optimization, she has helped numerous clients achieve rapid and lasting income growth.
+    </p>
 
-    <h2 class="animate__animated animate__fadeIn" data-aos>Real Results. Real Impact. <span class="badge bg-success" data-bs-toggle="modal" data-bs-target="#25%Modal">+25% Revenue</span></h2>
-    <p class="animate__animated animate__fadeIn" data-aos>Clients regularly see increased revenue within months, thanks to our hands-on approach and deep industry knowledge. We don't just consult—we execute.</p>
+    <h2 class="animate__animated animate__fadeIn" data-aos>
+      Real Results. Real Impact. 
+      <span class="badge bg-success" data-bs-toggle="modal" data-bs-target="#25%Modal">+25% Revenue</span>
+    </h2>
+    <p class="animate__animated animate__fadeIn" data-aos>
+      Clients regularly see increased revenue within months, thanks to our hands-on approach and deep industry knowledge. We don't just consult—we execute.
+    </p>
 
     <h2 class="animate__animated animate__fadeInLeft" data-aos>Our Difference</h2>
     <ul class="animate__animated animate__fadeInLeft" data-aos>
@@ -155,7 +169,9 @@
       <li>✔ Results-driven execution</li>
     </ul>
 
-    <p class="animate__animated animate__fadeIn" data-aos>PRS Managed Services is more than a vendor—we’re a true extension of your clinic.</p>
+    <p class="animate__animated animate__fadeIn" data-aos>
+      PRS Managed Services is more than a vendor—we’re a true extension of your clinic.
+    </p>
 
     <div class="row justify-content-center mt-5 animate__animated animate__fadeInUp" data-aos>
       <div class="col-md-3 d-grid mb-2">
@@ -220,7 +236,6 @@
             <li>✔ Increase in Monthly Revenue: <strong>+5%</strong></li>
             <li>✔ Average Payment Per Visit: <strong>+25%</strong></li>
           </ul>
-
           <div class="row text-center mt-4">
             <div class="col-md-4">
               <canvas id="arChart"></canvas>
@@ -234,6 +249,47 @@
               <canvas id="paymentChart"></canvas>
               <p class="mt-2">Payment per Visit</p>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reviews Modal for Google Reviews & Testimonials -->
+  <div class="modal fade" id="reviewsModal" tabindex="-1" aria-labelledby="reviewsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="reviewsModalLabel">Google Reviews & Testimonials</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Replace the content below with your actual reviews and testimonials -->
+          <div class="container">
+            <p>See what our clients have to say:</p>
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Brett Parra</h5>
+                <p class="card-text">"Outstanding team…the Painter’s have always been 1st class and thorough without bias."</p>
+                <p class="card-text"><small class="text-muted">★★★★★</small></p>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Deanna Williams</h5>
+                <p class="card-text">"PRS has been the go-to for anything and everything having to do with Urology coding and billing compliance... Highly recommend."</p>
+                <p class="card-text"><small class="text-muted">★★★★★</small></p>
+              </div>
+            </div>
+            <!-- Placeholder card with provided Google Maps link -->
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Our Location</h5>
+                <p class="card-text">Click the button below to view our location on Google Maps.</p>
+                <a href="https://maps.app.goo.gl/BDigpqTQw62WC1fc9" class="btn btn-primary" target="_blank">View on Map</a>
+              </div>
+            </div>
+            <p>For more reviews and our office location, please visit our <a href="https://www.google.com/search?q=PRS+Managed+Services+reviews" target="_blank">Google Reviews</a>.</p>
           </div>
         </div>
       </div>
