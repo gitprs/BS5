@@ -106,7 +106,7 @@
       0% { transform: scale(1); }
       50% { transform: scale(1.08); }
       100% { transform: scale(1); }
-    }`x
+    }
 
     /* Mobile-specific screen sizing tweaks */
     @media (max-width: 576px) {
@@ -127,6 +127,7 @@
         max-width: 80px;
       }
     }
+    
   </style>
 
 </head>
@@ -183,7 +184,7 @@
 
     <h2 class="animate__animated animate__fadeInLeft" data-aos>Our Difference</h2>
     <ul class="animate__animated animate__fadeInLeft" data-aos>
-      <li>✔ Deep industry experience <span class="badge bg-info">20+ Years</span></li>
+      <li>✔ Deep industry experience <span class="badge bg-info" data-bs-toggle="modal" data-bs-target="#pmListModal">PMs we work with</span></li>
       <li>✔ Transparent communication</li>
       <li>✔ Customized solutions <span class="badge bg-dark">Tailored</span></li>
       <li>✔ Results-driven execution</li>
@@ -238,7 +239,7 @@
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body text-center">
-          <img src="images/Marianne Desciose.jpg" alt="Marianne DeSciose" class="modal-img">
+          <img src="images/Marianne DeSciose.jpg" alt="Marianne DeSciose" class="modal-img">
           <p><em><b>Marianne DeSciose, Director of Operations</b></em> has presided over the growth and development of PRS, acquiring unparalleled expertise in Practice Management systems, workflow, and claim optimization. From large clinics to small practices, her dedication has raised client income by over 30% within months of onboarding.</p>
           <p class="fst-italic">“Our mission is to provide consistent, smart, and tailored support that makes a real difference for our clients.”</p>
         </div>
@@ -319,6 +320,191 @@
       </div>
     </div>
   </div>
+  
+<!-- PMIS List Modal -->
+<div class="modal fade" id="pmListModal" tabindex="-1" aria-labelledby="pmListModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="pmListModalLabel">PRS works with <u>ALL</u> of them!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Inline styles for interactive list items -->
+        <style>
+          .pm-list-item {
+            transition: background-color 0.3s, transform 0.3s;
+            padding: 4px 8px;
+            border-radius: 4px;
+            margin-bottom: 4px;
+          }
+          .pm-list-item:hover {
+            background-color: #e0f2fe; /* light blue background */
+            transform: scale(1.02);
+          }
+        </style>
+        <div class="container">
+          <div class="row">
+            <!-- First Column -->
+            <div class="col-md-6">
+              <ul class="list-unstyled">
+                <li class="pm-list-item">
+                  <i class="fas fa-check" style="color: #3b82f6; margin-right: 0.5rem; text-shadow: 1px 0 0 #3b82f6, -1px 0 0 #3b82f6, 0 1px 0 #3b82f6, 0 -1px 0 #3b82f6;"></i>
+                  Advanced MD
+                </li>
+                <li class="pm-list-item">
+                  <i class="fas fa-check" style="color: #3b82f6; margin-right: 0.5rem; text-shadow: 1px 0 0 #3b82f6, -1px 0 0 #3b82f6, 0 1px 0 #3b82f6, 0 -1px 0 #3b82f6;"></i>
+                  AllegianceMD
+                </li>
+                <li class="pm-list-item">
+                  <i class="fas fa-check" style="color: #3b82f6; margin-right: 0.5rem; text-shadow: 1px 0 0 #3b82f6, -1px 0 0 #3b82f6, 0 1px 0 #3b82f6, 0 -1px 0 #3b82f6;"></i>
+                  Aprima
+                </li>
+                <li class="pm-list-item">
+                  <i class="fas fa-check" style="color: #3b82f6; margin-right: 0.5rem; text-shadow: 1px 0 0 #3b82f6, -1px 0 0 #3b82f6, 0 1px 0 #3b82f6, 0 -1px 0 #3b82f6;"></i>
+                  AthenaHealth Collector
+                </li>
+                <li class="pm-list-item">
+                  <i class="fas fa-check" style="color: #3b82f6; margin-right: 0.5rem; text-shadow: 1px 0 0 #3b82f6, -1px 0 0 #3b82f6, 0 1px 0 #3b82f6, 0 -1px 0 #3b82f6;"></i>
+                  AthenaHealth IDX
+                </li>
+                <li class="pm-list-item">
+                  <i class="fas fa-check" style="color: #3b82f6; margin-right: 0.5rem; text-shadow: 1px 0 0 #3b82f6, -1px 0 0 #3b82f6, 0 1px 0 #3b82f6, 0 -1px 0 #3b82f6;"></i>
+                  AthenaHealth PM
+                </li>
+                <li class="pm-list-item">
+                  <i class="fas fa-check" style="color: #3b82f6; margin-right: 0.5rem; text-shadow: 1px 0 0 #3b82f6, -1px 0 0 #3b82f6, 0 1px 0 #3b82f6, 0 -1px 0 #3b82f6;"></i>
+                  CareCloud
+                </li>
+                <li class="pm-list-item">
+                  <i class="fas fa-check" style="color: #3b82f6; margin-right: 0.5rem; text-shadow: 1px 0 0 #3b82f6, -1px 0 0 #3b82f6, 0 1px 0 #3b82f6, 0 -1px 0 #3b82f6;"></i>
+                  Compulink
+                </li>
+                <li class="pm-list-item">
+                  <i class="fas fa-check" style="color: #3b82f6; margin-right: 0.5rem; text-shadow: 1px 0 0 #3b82f6, -1px 0 0 #3b82f6, 0 1px 0 #3b82f6, 0 -1px 0 #3b82f6;"></i>
+                  CureMD
+                </li>
+                <li class="pm-list-item">
+                  <i class="fas fa-check" style="color: #3b82f6; margin-right: 0.5rem; text-shadow: 1px 0 0 #3b82f6, -1px 0 0 #3b82f6, 0 1px 0 #3b82f6, 0 -1px 0 #3b82f6;"></i>
+                  Dr Chrono
+                </li>
+                <li class="pm-list-item">
+                  <i class="fas fa-check" style="color: #3b82f6; margin-right: 0.5rem; text-shadow: 1px 0 0 #3b82f6, -1px 0 0 #3b82f6, 0 1px 0 #3b82f6, 0 -1px 0 #3b82f6;"></i>
+                  eCinical Works (ECW)
+                </li>
+                <li class="pm-list-item">
+                  <i class="fas fa-check" style="color: #3b82f6; margin-right: 0.5rem; text-shadow: 1px 0 0 #3b82f6, -1px 0 0 #3b82f6, 0 1px 0 #3b82f6, 0 -1px 0 #3b82f6;"></i>
+                  Eclipse PM
+                </li>
+                <li class="pm-list-item">
+                  <i class="fas fa-check" style="color: #3b82f6; margin-right: 0.5rem; text-shadow: 1px 0 0 #3b82f6, -1px 0 0 #3b82f6, 0 1px 0 #3b82f6, 0 -1px 0 #3b82f6;"></i>
+                  Epic
+                </li>
+                <li class="pm-list-item">
+                  <i class="fas fa-check" style="color: #3b82f6; margin-right: 0.5rem; text-shadow: 1px 0 0 #3b82f6, -1px 0 0 #3b82f6, 0 1px 0 #3b82f6, 0 -1px 0 #3b82f6;"></i>
+                  Experior Suite
+                </li>
+                <li class="pm-list-item">
+                  <i class="fas fa-check" style="color: #3b82f6; margin-right: 0.5rem; text-shadow: 1px 0 0 #3b82f6, -1px 0 0 #3b82f6, 0 1px 0 #3b82f6, 0 -1px 0 #3b82f6;"></i>
+                  Greenway - Intergy
+                </li>
+                <li class="pm-list-item">
+                  <i class="fas fa-check" style="color: #3b82f6; margin-right: 0.5rem; text-shadow: 1px 0 0 #3b82f6, -1px 0 0 #3b82f6, 0 1px 0 #3b82f6, 0 -1px 0 #3b82f6;"></i>
+                  Greenway - Prime
+                </li>
+                <li class="pm-list-item">
+                  <i class="fas fa-check" style="color: #3b82f6; margin-right: 0.5rem; text-shadow: 1px 0 0 #3b82f6, -1px 0 0 #3b82f6, 0 1px 0 #3b82f6, 0 -1px 0 #3b82f6;"></i>
+                  Harris Caretracker
+                </li>
+                <li class="pm-list-item">
+                  <i class="fas fa-check" style="color: #3b82f6; margin-right: 0.5rem; text-shadow: 1px 0 0 #3b82f6, -1px 0 0 #3b82f6, 0 1px 0 #3b82f6, 0 -1px 0 #3b82f6;"></i>
+                  inSync
+                </li>
+              </ul>
+            </div>
+            <!-- Second Column -->
+            <div class="col-md-6">
+              <ul class="list-unstyled">
+                <li class="pm-list-item">
+                  <i class="fas fa-check" style="color: #3b82f6; margin-right: 0.5rem; text-shadow: 1px 0 0 #3b82f6, -1px 0 0 #3b82f6, 0 1px 0 #3b82f6, 0 -1px 0 #3b82f6;"></i>
+                  Intelligen Medical Software (IMS)
+                </li>
+                <li class="pm-list-item">
+                  <i class="fas fa-check" style="color: #3b82f6; margin-right: 0.5rem; text-shadow: 1px 0 0 #3b82f6, -1px 0 0 #3b82f6, 0 1px 0 #3b82f6, 0 -1px 0 #3b82f6;"></i>
+                  Kareo (Tebra)
+                </li>
+                <li class="pm-list-item">
+                  <i class="fas fa-check" style="color: #3b82f6; margin-right: 0.5rem; text-shadow: 1px 0 0 #3b82f6, -1px 0 0 #3b82f6, 0 1px 0 #3b82f6, 0 -1px 0 #3b82f6;"></i>
+                  Lytec
+                </li>
+                <li class="pm-list-item">
+                  <i class="fas fa-check" style="color: #3b82f6; margin-right: 0.5rem; text-shadow: 1px 0 0 #3b82f6, -1px 0 0 #3b82f6, 0 1px 0 #3b82f6, 0 -1px 0 #3b82f6;"></i>
+                  MedClarity
+                </li>
+                <li class="pm-list-item">
+                  <i class="fas fa-check" style="color: #3b82f6; margin-right: 0.5rem; text-shadow: 1px 0 0 #3b82f6, -1px 0 0 #3b82f6, 0 1px 0 #3b82f6, 0 -1px 0 #3b82f6;"></i>
+                  MedEvolve
+                </li>
+                <li class="pm-list-item">
+                  <i class="fas fa-check" style="color: #3b82f6; margin-right: 0.5rem; text-shadow: 1px 0 0 #3b82f6, -1px 0 0 #3b82f6, 0 1px 0 #3b82f6, 0 -1px 0 #3b82f6;"></i>
+                  MediFusion
+                </li>
+                <li class="pm-list-item">
+                  <i class="fas fa-check" style="color: #3b82f6; margin-right: 0.5rem; text-shadow: 1px 0 0 #3b82f6, -1px 0 0 #3b82f6, 0 1px 0 #3b82f6, 0 -1px 0 #3b82f6;"></i>
+                  Meditech Expanse
+                </li>
+                <li class="pm-list-item">
+                  <i class="fas fa-check" style="color: #3b82f6; margin-right: 0.5rem; text-shadow: 1px 0 0 #3b82f6, -1px 0 0 #3b82f6, 0 1px 0 #3b82f6, 0 -1px 0 #3b82f6;"></i>
+                  MedWorxs
+                </li>
+                <li class="pm-list-item">
+                  <i class="fas fa-check" style="color: #3b82f6; margin-right: 0.5rem; text-shadow: 1px 0 0 #3b82f6, -1px 0 0 #3b82f6, 0 1px 0 #3b82f6, 0 -1px 0 #3b82f6;"></i>
+                  Modernizing Medicine
+                </li>
+                <li class="pm-list-item">
+                  <i class="fas fa-check" style="color: #3b82f6; margin-right: 0.5rem; text-shadow: 1px 0 0 #3b82f6, -1px 0 0 #3b82f6, 0 1px 0 #3b82f6, 0 -1px 0 #3b82f6;"></i>
+                  NextGen Enterprise
+                </li>
+                <li class="pm-list-item">
+                  <i class="fas fa-check" style="color: #3b82f6; margin-right: 0.5rem; text-shadow: 1px 0 0 #3b82f6, -1px 0 0 #3b82f6, 0 1px 0 #3b82f6, 0 -1px 0 #3b82f6;"></i>
+                  OpenPM
+                </li>
+                <li class="pm-list-item">
+                  <i class="fas fa-check" style="color: #3b82f6; margin-right: 0.5rem; text-shadow: 1px 0 0 #3b82f6, -1px 0 0 #3b82f6, 0 1px 0 #3b82f6, 0 -1px 0 #3b82f6;"></i>
+                  Oracle Health PM (Cerner)
+                </li>
+                <li class="pm-list-item">
+                  <i class="fas fa-check" style="color: #3b82f6; margin-right: 0.5rem; text-shadow: 1px 0 0 #3b82f6, -1px 0 0 #3b82f6, 0 1px 0 #3b82f6, 0 -1px 0 #3b82f6;"></i>
+                  Practice Suite
+                </li>
+                <li class="pm-list-item">
+                  <i class="fas fa-check" style="color: #3b82f6; margin-right: 0.5rem; text-shadow: 1px 0 0 #3b82f6, -1px 0 0 #3b82f6, 0 1px 0 #3b82f6, 0 -1px 0 #3b82f6;"></i>
+                  PracticeFusion
+                </li>
+                <li class="pm-list-item">
+                  <i class="fas fa-check" style="color: #3b82f6; margin-right: 0.5rem; text-shadow: 1px 0 0 #3b82f6, -1px 0 0 #3b82f6, 0 1px 0 #3b82f6, 0 -1px 0 #3b82f6;"></i>
+                  PrognoCIS
+                </li>
+                <li class="pm-list-item">
+                  <i class="fas fa-check" style="color: #3b82f6; margin-right: 0.5rem; text-shadow: 1px 0 0 #3b82f6, -1px 0 0 #3b82f6, 0 1px 0 #3b82f6, 0 -1px 0 #3b82f6;"></i>
+                  Provation
+                </li>
+                <li class="pm-list-item">
+                  <i class="fas fa-check" style="color: #3b82f6; margin-right: 0.5rem; text-shadow: 1px 0 0 #3b82f6, -1px 0 0 #3b82f6, 0 1px 0 #3b82f6, 0 -1px 0 #3b82f6;"></i>
+                  SIS
+                </li>
+                <li class="pm-list-item">
+                  <i class="fas fa-check" style="color: #3b82f6; margin-right: 0.5rem; text-shadow: 1px 0 0 #3b82f6, -1px 0 0 #3b82f6, 0 1px 0 #3b82f6, 0 -1px 0 #3b82f6;"></i>
+                  Veradigm (Allscripts)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
   <!-- Bootstrap, AOS, and Chart.js scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
