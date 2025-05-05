@@ -14,7 +14,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-  <!-- Load favicon-->
+  <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
@@ -26,24 +26,13 @@
       background-color: #f9fafb;
       color: #1f2937;
     }
-    h2 {
-      color: #111827;
-    }
+    h2 { color: #111827; }
     .cta-button, .call-button {
       font-weight: 600;
       border-radius: 0.5rem;
     }
-    .cta-button i, .call-button i {
-      margin-right: 0.5rem;
-    }
-    .badge.bg-secondary:hover {
-      font-size: 0.8rem;
-      vertical-align: middle;
-      cursor: pointer;
-    }
-    .animate__animated {
-      visibility: hidden;
-    }
+    .cta-button i, .call-button i { margin-right: 0.5rem; }
+    .animate__animated { visibility: hidden; }
     .animate__animated.animate__fadeIn,
     .animate__animated.animate__fadeInUp,
     .animate__animated.animate__fadeInDown,
@@ -51,21 +40,13 @@
     .animate__animated.animate__fadeInRight {
       visibility: visible;
     }
-    .logo-container {
-      text-align: center;
-      margin-bottom: 1rem;
-    }
-    .subtitle {
-      font-size: 1.25rem;
-      font-weight: 500;
-    }
+    .logo-container { text-align: center; margin-bottom: 1rem; }
+    .subtitle { font-size: 1.25rem; font-weight: 500; }
     .logo-container img {
       transition: transform 0.4s ease;
       max-width: 400px;
     }
-    .logo-container img:hover {
-      transform: scale(1.05);
-    }
+    .logo-container img:hover { transform: scale(1.05); }
     .modal-img {
       max-width: 100px;
       border-radius: 0.5rem;
@@ -76,9 +57,7 @@
       color: white;
       border-bottom: none;
     }
-    .modal-header .modal-title {
-      font-weight: 600;
-    }
+    .modal-header .modal-title { font-weight: 600; }
     .modal-content {
       border-radius: 0.75rem;
       box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
@@ -87,12 +66,8 @@
       background-color: #f1f5f9;
       border-top: 1px solid #e2e8f0;
     }
-    .modal-body p {
-      color: #1e293b;
-    }
-    .modal-body .fst-italic {
-      color: #475569;
-    }
+    .modal-body p { color: #1e293b; }
+    .modal-body .fst-italic { color: #475569; }
 
     /* Hover + pulse for badges*/
     .badge[data-bs-toggle]:hover,
@@ -100,37 +75,29 @@
       cursor: pointer;
       animation: pulse 1s infinite;
     }
-
     @keyframes pulse {
       0% { transform: scale(1); }
       50% { transform: scale(1.08); }
       100% { transform: scale(1); }
     }
 
-    /* Mobile-specific screen sizing tweaks */
+    /* Mobile-specific tweaks */
     @media (max-width: 576px) {
-      h2 {
-        font-size: 1.5rem;
-      }
-      .subtitle {
-        font-size: 1rem;
-      }
+      h2 { font-size: 1.5rem; }
+      .subtitle { font-size: 1rem; }
       .cta-button, .call-button {
         font-size: 0.9rem;
         padding: 0.5rem 0.75rem;
       }
-      .logo-container img {
-        max-width: 90%;
-      }
-      .modal-img {
-        max-width: 80px;
-      }
+      .logo-container img { max-width: 90%; }
+      .modal-img { max-width: 80px; }
     }
   </style>
-
 </head>
+
 <body>
   <div class="container py-5">
+    <!-- Hero & CTAs -->
     <div class="logo-container" data-aos="fade-down">
       <img src="images/favicon_io/prsmanagedserviceslogo.svg" alt="PRS Managed Services Logo" class="img-fluid mb-3">
       <p class="subtitle animate__animated animate__fadeInUp">
@@ -140,7 +107,6 @@
         </strong>
       </p>
     </div>
-
     <div class="row justify-content-center mb-5 animate__animated animate__fadeInUp" data-aos>
       <div class="col-md-3 d-grid mb-2">
         <a href="mailto:sales@prsdata.com" class="btn btn-primary cta-button">
@@ -156,30 +122,33 @@
         <a href="https://www.prsnetwork.com/outsourced_billing#section-1686078158972" target="_blank" class="btn btn-success cta-button">
           <i class="fas fa-arrow-right"></i> Schedule call
         </a>
-      </div>      
+      </div>
     </div>
 
+    <!-- Intro Text -->
     <div class="mb-4 animate__animated animate__fadeIn" data-aos>
       <p>If you attended a seminar with Mark Painter, <a href="https://www.prsnetwork.com/about" target="_blank">CEO of PRS Network</a>, you’ve already experienced a glimpse of the insight and expertise that fuels PRS Managed Services. Now, discover how our team can help your clinic unlock greater efficiency, compliance, and revenue.</p>
     </div>
 
+    <!-- Leadership Section -->
     <h2 class="animate__animated animate__fadeInRight" data-aos>Backed by Leadership You Can Trust</h2>
     <p class="animate__animated animate__fadeInRight" data-aos>
       Mark Painter, our <span class="badge bg-primary" data-bs-toggle="modal" data-bs-target="#markModal">CEO Expert</span>, is a nationally recognized authority in billing, coding, and RVUs. As the co-developer of <a href="https://www.prsnetwork.com/codingtoday" target="_blank">Coding Today</a> and a frequent speaker and consultant, Mark brings unmatched insight to your operations.
     </p>
-
     <p class="animate__animated animate__fadeInRight" data-aos>
       Marianne DeSciose, our Director of Operations <span class="badge bg-primary" data-bs-toggle="modal" data-bs-target="#marianneModal">Strategist</span>, brings over 15 years of experience at PRS. With deep knowledge of practice management systems and workflow optimization, she has helped numerous clients achieve rapid and lasting income growth.
     </p>
 
+    <!-- Results Section -->
     <h2 class="animate__animated animate__fadeIn" data-aos>
-      Real Results. Real Impact. 
-      <span class="badge bg-success" data-bs-toggle="modal" data-bs-target="#25%Modal">+25% Revenue</span>
+      Real Results. Real Impact.
+      <span class="badge bg-success" data-bs-toggle="modal" data-bs-target="#25PercentModal">+25% Revenue</span>
     </h2>
     <p class="animate__animated animate__fadeIn" data-aos>
       Clients regularly see increased revenue within months, thanks to our hands-on approach and deep industry knowledge. We don't just consult—we execute.
     </p>
 
+    <!-- Our Difference -->
     <h2 class="animate__animated animate__fadeInLeft" data-aos>Our Difference</h2>
     <ul class="animate__animated animate__fadeInLeft" data-aos>
       <li>✔ Deep industry experience <span class="badge bg-info" data-bs-toggle="modal" data-bs-target="#pmListModal">PMs we work with</span></li>
@@ -197,10 +166,7 @@
       <li>✔ Results-driven execution</li>
     </ul>
 
-    <p class="animate__animated animate__fadeIn" data-aos>
-      PRS Managed Services is more than a vendor—we’re a true extension of your clinic.
-    </p>
-
+    <!-- Footer CTAs -->
     <div class="row justify-content-center mt-5 animate__animated animate__fadeInUp" data-aos>
       <div class="col-md-3 d-grid mb-2">
         <a href="mailto:sales@prsdata.com" class="btn btn-primary cta-button">
@@ -216,100 +182,230 @@
         <a href="https://www.prsnetwork.com/outsourced_billing#section-1686078158972" target="_blank" class="btn btn-success cta-button">
           <i class="fas fa-arrow-right"></i> Schedule call
         </a>
-      </div>      
+      </div>
     </div>
   </div>
 
-  <!-- Mark Modal -->
-  <!-- (…existing modals for markModal, marianneModal, 25%Modal, reviewsModal, pmListModal…) -->
+  <!-- Modals -->
+
+  <!-- Mark Painter Modal -->
+  <div class="modal fade" id="markModal" tabindex="-1" aria-labelledby="markModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="markModalLabel">Mark Painter</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/Mark Painter Board.jpeg" alt="Mark Painter" class="modal-img">
+          <p><em><b>Mark Painter, MBSU, CPMA, CEO</b></em> is one of the foremost authorities on Medical Billing, Coding, and RVUs in the country. Developed the nation's first RVU schedule in the 1960s, as well as <a href="https://www.prsnetwork.com/codingtoday" target="_blank">Coding Today</a>, the best coding software for physicians on the US market. Mark travels the country giving lectures, conducting seminars, and consulting with groups both large and small—a remarkable resource for our clients and the national medical community at large.</p>
+          <p class="fst-italic">“Education is key to unlocking efficiency and revenue potential in any clinic.”</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Marianne DeSciose Modal -->
+  <div class="modal fade" id="marianneModal" tabindex="-1" aria-labelledby="marianneModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="marianneModalLabel">Marianne DeSciose</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/Marianne DeSciose.jpeg" alt="Marianne DeSciose" class="modal-img">
+          <p><em><b>Marianne DeSciose, Director of Operations</b></em> has presided over the growth and development of PRS, acquiring unparalleled expertise in Practice Management systems, workflow, and claim optimization. From large clinics to small practices, her dedication has raised client income by over 30% within months of onboarding.</p>
+          <p class="fst-italic">“Our mission is to provide consistent, smart, and tailored support that makes a real difference for our clients.”</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- +25% Revenue Modal -->
+  <div class="modal fade" id="25PercentModal" tabindex="-1" aria-labelledby="resultsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="resultsModalLabel">Measurable Results</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body bg-light">
+          <p><strong>After two years using our unique protocols, our customers can expect:</strong></p>
+          <ul>
+            <li>✔ Reduction of Days in AR: <strong>40% to 50%</strong></li>
+            <li>✔ Increase in Monthly Revenue: <strong>+5%</strong></li>
+            <li>✔ Average Payment Per Visit: <strong>+25%</strong></li>
+          </ul>
+          <div class="row text-center mt-4">
+            <div class="col-md-4">
+              <canvas id="arChart"></canvas>
+              <p class="mt-2">Days in AR Reduction</p>
+            </div>
+            <div class="col-md-4">
+              <canvas id="revenueChart"></canvas>
+              <p class="mt-2">Monthly Revenue Increase</p>
+            </div>
+            <div class="col-md-4">
+              <canvas id="paymentChart"></canvas>
+              <p class="mt-2">Payment per Visit</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reviews & Testimonials Modal -->
+  <div class="modal fade" id="reviewsModal" tabindex="-1" aria-labelledby="reviewsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="reviewsModalLabel">Google Reviews & Testimonials</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>See what our clients have to say:</p>
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Brett Parra</h5>
+              <p class="card-text">"Outstanding team…the Painter’s have always been 1st class and thorough without bias."</p>
+              <p class="card-text"><small class="text-muted">★★★★★</small></p>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Deanna Williams</h5>
+              <p class="card-text">"PRS has been the go-to for anything and everything having to do with Urology coding and billing compliance... Highly recommend."</p>
+              <p class="card-text"><small class="text-muted">★★★★★</small></p>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Our Location</h5>
+              <p class="card-text">Click the button below to view our location on Google Maps.</p>
+              <a href="https://maps.app.goo.gl/BDigpqTQw62WC1fc9" class="btn btn-primary" target="_blank">View on Map</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PMIS List Modal -->
+  <div class="modal fade" id="pmListModal" tabindex="-1" aria-labelledby="pmListModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="pmListModalLabel">PRS works with <u>ALL</u> of them!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <style>
+            .pm-list-item {
+              transition: background-color 0.3s, transform 0.3s;
+              padding: 4px 8px;
+              border-radius: 4px;
+              margin-bottom: 4px;
+            }
+            .pm-list-item:hover {
+              background-color: #e0f2fe;
+              transform: scale(1.02);
+            }
+          </style>
+          <div class="container">
+            <div class="row">
+              <!-- First column -->
+              <div class="col-md-6">
+                <ul class="list-unstyled">
+                  <li class="pm-list-item"><i class="fas fa-check" style="margin-right:0.5rem;"></i>Advanced MD</li>
+                  <li class="pm-list-item"><i class="fas fa-check" style="margin-right:0.5rem;"></i>AllegianceMD</li>
+                  <li class="pm-list-item"><i class="fas fa-check" style="margin-right:0.5rem;"></i>Aprima</li>
+                  <li class="pm-list-item"><i class="fas fa-check" style="margin-right:0.5rem;"></i>AthenaHealth Collector</li>
+                  <li class="pm-list-item"><i class="fas fa-check" style="margin-right:0.5rem;"></i>AthenaHealth IDX</li>
+                  <li class="pm-list-item"><i class="fas fa-check" style="margin-right:0.5rem;"></i>AthenaHealth PM</li>
+                  <li class="pm-list-item"><i class="fas fa-check" style="margin-right:0.5rem;"></i>CareCloud</li>
+                  <li class="pm-list-item"><i class="fas fa-check" style="margin-right:0.5rem;"></i>Compulink</li>
+                  <li class="pm-list-item"><i class="fas fa-check" style="margin-right:0.5rem;"></i>CureMD</li>
+                  <li class="pm-list-item"><i class="fas fa-check" style="margin-right:0.5rem;"></i>Dr Chrono</li>
+                  <li class="pm-list-item"><i class="fas fa-check" style="margin-right:0.5rem;"></i>eClinicalWorks (ECW)</li>
+                  <li class="pm-list-item"><i class="fas fa-check" style="margin-right:0.5rem;"></i>Eclipse PM</li>
+                  <li class="pm-list-item"><i class="fas fa-check" style="margin-right:0.5rem;"></i>Epic</li>
+                  <li class="pm-list-item"><i class="fas fa-check" style="margin-right:0.5rem;"></i>Experior Suite</li>
+                  <li class="pm-list-item"><i class="fas fa-check" style="margin-right:0.5rem;"></i>Greenway – Intergy</li>
+                  <li class="pm-list-item"><i class="fas fa-check" style="margin-right:0.5rem;"></i>Greenway – Prime</li>
+                  <li class="pm-list-item"><i class="fas fa-check" style="margin-right:0.5rem;"></i>Harris Caretracker</li>
+                  <li class="pm-list-item"><i class="fas fa-check" style="margin-right:0.5rem;"></i>inSync</li>
+                </ul>
+              </div>
+              <!-- Second column -->
+              <div class="col-md-6">
+                <ul class="list-unstyled">
+                  <li class="pm-list-item"><i class="fas fa-check" style="margin-right:0.5rem;"></i>Intelligen Medical Software (IMS)</li>
+                  <li class="pm-list-item"><i class="fas fa-check" style="margin-right:0.5rem;"></i>Kareo (Tebra)</li>
+                  <li class="pm-list-item"><i class="fas fa-check" style="margin-right:0.5rem;"></i>Lytec</li>
+                  <li class="pm-list-item"><i class="fas fa-check" style="margin-right:0.5rem;"></i>MedClarity</li>
+                  <li class="pm-list-item"><i class="fas fa-check" style="margin-right:0.5rem;"></i>MedEvolve</li>
+                  <li class="pm-list-item"><i class="fas fa-check" style="margin-right:0.5rem;"></i>MediFusion</li>
+                  <li class="pm-list-item"><i class="fas fa-check" style="margin-right:0.5rem;"></i>Meditech Expanse</li>
+                  <li class="pm-list-item"><i class="fas fa-check" style="margin-right:0.5rem;"></i>MedWorxs</li>
+                  <li class="pm-list-item"><i class="fas fa-check" style="margin-right:0.5rem;"></i>Modernizing Medicine</li>
+                  <li class="pm-list-item"><i class="fas fa-check" style="margin-right:0.5rem;"></i>NextGen Enterprise</li>
+                  <li class="pm-list-item"><i class="fas fa-check" style="margin-right:0.5rem;"></i>OpenPM</li>
+                  <li class="pm-list-item"><i class="fas fa-check" style="margin-right:0.5rem;"></i>Oracle Health PM (Cerner)</li>
+                  <li class="pm-list-item"><i class="fas fa-check" style="margin-right:0.5rem;"></i>Practice Suite</li>
+                  <li class="pm-list-item"><i class="fas fa-check" style="margin-right:0.5rem;"></i>PracticeFusion</li>
+                  <li class="pm-list-item"><i class="fas fa-check" style="margin-right:0.5rem;"></i>PrognoCIS</li>
+                  <li class="pm-list-item"><i class="fas fa-check" style="margin-right:0.5rem;"></i>Provation</li>
+                  <li class="pm-list-item"><i class="fas fa-check" style="margin-right:0.5rem;"></i>SIS</li>
+                  <li class="pm-list-item"><i class="fas fa-check" style="margin-right:0.5rem;"></i>Veradigm (Allscripts)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Tailored Modal -->
   <div class="modal fade" id="tailoredModal" tabindex="-1" aria-labelledby="tailoredModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="tailoredModalLabel">Tailored AP Process Flow</h5>
+          <h5 class="modal-title" id="tailoredModalLabel">Customized AP Workflow</h5>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body text-center">
-          <!-- Copy your screenshot into images/tailored-detail.png -->
-          <img 
-            src="images/tailored-detail.png" 
-            alt="Tailored workflow overview" 
-            class="modal-img" 
-            style="max-width:100%; height:auto;"
-          >
+          <img src="images/tailored-detail.png" alt="Tailored workflow overview" class="modal-img" style="max-width:100%; height:auto;">
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Bootstrap, AOS, and Chart.js scripts -->
+  <!-- Bootstrap JS bundle (with Popper) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS -->
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 1000,
-      once: true
-    });
-  </script>
+  <script> AOS.init({ duration:1000, once:true }); </script>
+  <!-- Chart.js -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const arChart = new Chart(document.getElementById('arChart'), {
-        type: 'bar',
-        data: {
-          labels: ['Before', 'After'],
-          datasets: [{
-            label: 'Days in AR',
-            data: [60, 33],
-            backgroundColor: ['#ef4444', '#10b981']
-          }]
-        },
-        options: {
-          responsive: true,
-          plugins: { legend: { display: false } },
-          scales: { y: { beginAtZero: true } }
-        }
+    document.addEventListener("DOMContentLoaded", function(){
+      new Chart(document.getElementById('arChart'), {
+        type:'bar',
+        data:{ labels:['Before','After'], datasets:[{ label:'Days in AR', data:[60,33], backgroundColor:['#ef4444','#10b981'] }] },
+        options:{ responsive:true, plugins:{ legend:{display:false} }, scales:{ y:{ beginAtZero:true } } }
       });
-
-      const revenueChart = new Chart(document.getElementById('revenueChart'), {
-        type: 'line',
-        data: {
-          labels: ['Jan', 'Feb', 'Mar', 'Apr'],
-          datasets: [{
-            label: 'Revenue ($)',
-            data: [10000, 10300, 10700, 11000],
-            borderColor: '#3b82f6',
-            backgroundColor: '#93c5fd',
-            fill: true,
-            tension: 0.4
-          }]
-        },
-        options: {
-          responsive: true,
-          plugins: { legend: { display: false } },
-          scales: { y: { beginAtZero: false } }
-        }
+      new Chart(document.getElementById('revenueChart'), {
+        type:'line',
+        data:{ labels:['Jan','Feb','Mar','Apr'], datasets:[{ data:[10000,10300,10700,11000], borderColor:'#3b82f6', backgroundColor:'#93c5fd', fill:true, tension:0.4 }] },
+        options:{ responsive:true, plugins:{ legend:{display:false} }, scales:{ y:{ beginAtZero:false } } }
       });
-
-      const paymentChart = new Chart(document.getElementById('paymentChart'), {
-        type: 'doughnut',
-        data: {
-          labels: ['Original', 'Increase'],
-          datasets: [{
-            data: [75, 25],
-            backgroundColor: ['#fbbf24', '#10b981']
-          }]
-        },
-        options: {
-          responsive: true,
-          plugins: {
-            legend: {
-              position: 'bottom'
-            }
-          }
-        }
+      new Chart(document.getElementById('paymentChart'), {
+        type:'doughnut',
+        data:{ labels:['Original','Increase'], datasets:[{ data:[75,25], backgroundColor:['#fbbf24','#10b981'] }] },
+        options:{ responsive:true, plugins:{ legend:{ position:'bottom' } } }
       });
     });
   </script>
