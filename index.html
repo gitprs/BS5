@@ -8,6 +8,10 @@
   <meta name="keywords" content="medical billing, medical coding, revenue cycle management, practice analysis">
   <meta name="author" content="Brad Sclar">
   <meta name="description" content="PRS Managed Services provides expert revenue cycle management, medical billing, and coding solutions for clinics nationwide. Trusted by industry leaders.">
+  <meta name="description" content="PRS Managed Services delivers expert medical billing & coding, increasing clinic revenue by 25%+." />
+  <meta property="og:title" content="PRS Managed Services | RCM Experts" />
+  <meta property="og:description" content="Streamline operations, optimize reimbursements, and unlock revenue growth with PRS." />
+  <meta property="og:image" content="https://prsdata.com/images/og-image.jpg" />
 
   <!-- CSS Frameworks: Tailwind, Bootstrap, FontAwesome, Animate.css, AOS -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -56,6 +60,20 @@
     .badge[data-bs-toggle]:hover, .badge[data-bs-toggle]:focus { cursor: pointer; animation: pulse 1s infinite; }
     @keyframes pulse { 0%{transform:scale(1);}50%{transform:scale(1.08);}100%{transform:scale(1);} }
     @media (max-width:576px) { h2{font-size:1.5rem;} .subtitle{font-size:1rem;} .cta-button, .call-button{font-size:0.9rem; padding:0.5rem 0.75rem;} .logo-container img{max-width:90%;} .modal-img{max-width:80px;} }
+    /* Header links – darker, bolder, with hover state */
+    header nav a {
+      color: #1a1a1a;           /* ~15:1 contrast on white */
+      font-weight: 600;         /* makes the text stand out */
+      letter-spacing: 0.5px;    /* improves readability at small sizes */
+      transition: color 0.25s ease;
+    }
+
+    header nav a:hover,
+    header nav a:focus {
+      color: #0056b3;           /* a dark blue accent (meets 4.5:1 against white) */
+      text-decoration: underline;
+      outline: none;            /* focus outline can be customized as needed */
+    }
   </style>
 </head>
 <body>
